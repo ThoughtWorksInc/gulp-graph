@@ -25,7 +25,7 @@ module.exports = function(gulp) {
 
         dot += '}\n';
 
-        mkdirp('target/gulp-graph')
+        mkdirp.sync('target/gulp-graph')
         fs.writeFileSync('target/gulp-graph/gulp.dot', dot);
     });
 
